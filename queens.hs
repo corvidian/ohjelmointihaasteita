@@ -1,10 +1,10 @@
-#Shakissa kuningattaret uhkaavat toisiaan, jos ne ovat samalla pysty-, vaaka- tai vinorivillä. Tehtäväsi 
-#on selvittää, monellako tavalla annetun kokoiselle shakkilaudalle voi sijoittaa kaksi kuningatarta niin,
-#etteivät ne uhkaa toisiaan.
+--Shakissa kuningattaret uhkaavat toisiaan, jos ne ovat samalla pysty-, vaaka- tai vinorivillä. Tehtäväsi 
+--on selvittää, monellako tavalla annetun kokoiselle shakkilaudalle voi sijoittaa kaksi kuningatarta niin,
+--etteivät ne uhkaa toisiaan.
 
-#Esimerkiksi jos shakkilaudan koko on 3x3, tapoja on 8.
+--Esimerkiksi jos shakkilaudan koko on 3x3, tapoja on 8.
 
-#Kirjoita vastaukseen sijoitustapojen määrä, kun koko on 12345x12345.
+--Kirjoita vastaukseen sijoitustapojen määrä, kun koko on 12345x12345.
 
 import System.Environment
 
