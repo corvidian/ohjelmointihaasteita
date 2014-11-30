@@ -1,4 +1,11 @@
-#Tehtäväsi on laskea, monellako tavalla annetun luvun voi muodostaa alkulukujen summana. Jos kahdessa summassa on samat luvut eri järjestyksessä, ne lasketaan erikseen. Myös yhden luvun sisältävä summa lasketaan mukaan.
+--Tehtäväsi on laskea, montako erilaista merkkijonoa voi muodostaa poistamalla annetusta
+--merkkijonosta osan merkeistä. Jäljelle jäävien merkkien täytyy olla samassa järjestyksessä
+--kuin alkuperäisessä merkkijonossa.
+
+--Esimerkiksi merkkijonosta LAAJA saa 18 merkkijonoa: A, J, L, AA, AJ, JA, LA, LJ, AAA, AAJ,
+--AJA, LAA, LAJ, LJA, AAJA, LAAA, LAAJ ja LAJA.
+
+--Kirjoita vastaukseen, montako merkkijonoa saa merkkijonosta SAIPPUAKAUPPIAS.
 
 import qualified Data.Set as S
 
@@ -9,4 +16,4 @@ jonot set s = if (s `S.member` set)
                 then set
                 else S.insert s $ foldl jonot set $ strs s
 
-main = print $ S.size (jonot S.empty "SAIPPUAKAUPPIASAS") - 1
+main = print $ S.size (jonot S.empty "SAIPPUAKAUPPIAS") - 1
